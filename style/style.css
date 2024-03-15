@@ -1,0 +1,200 @@
+@font-face {
+    font-family: hanken;
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 70%;
+    font-size: 62.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: row;
+    font-family: hanken;
+    background-color: rgba(17, 0, 255, 0.075);
+    margin: auto;
+}
+
+div#container{
+    display: flex;
+    height: 550px;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+div#blue{
+    width: 400px;
+    height: 550px;
+    background-image: linear-gradient(to bottom, #6642FC,#302CEC);
+    padding: 3.5rem 0;
+    border-radius: 25px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+div#blue h1{
+    color: #C9C9F4;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+div#blue div#number{
+    background-image: linear-gradient(#4e21ca,#2421ca00);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#blue div#number p{
+    color: white;
+}
+
+div#blue div#number p:first-child{
+    font-size: 4rem;
+}
+
+div#blue #grt-p{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+
+div#blue #text-p{
+    font-size: 1.2rem;
+    width: 60%;
+    color: #C9C9F4;
+    font-weight: 500;
+}
+
+div#white{
+    height: 550px;
+    width: 400px;
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3.5rem 3rem;
+
+}
+
+div#white h1{
+    font-size: 1.6rem;
+    margin-right: auto;
+}
+
+div#white #main-content{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    width: 100%;
+}
+
+div#white .content-box{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 15px ;
+}
+
+div#white .content-box{
+    font-size: 1.4rem;
+}
+
+div#white .content-box-text{
+    display: flex;
+    align-items: center;
+}
+
+div#white .content-box:nth-child(1){
+    background-color: rgba(255, 87, 87, 0.140);
+}
+div#white .content-box:nth-child(2){
+    background-color: hsla(39, 100%, 56%, 0.140);
+}
+
+div#white .content-box:nth-child(3){
+    background-color: rgba(0, 189, 145, .14);
+}
+
+div#white .content-box:nth-child(4){
+    background-color: rgba(17, 36, 212, .14 );
+}
+div#white button{
+    background-color: #303b5a;
+    color: white; 
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .5s;
+    transition-property: background-color ;
+}
+
+div#white button:hover{
+    background-color: #4C37F4;
+}
+
+@media (max-width:1150px) {
+
+    body{
+        margin: 30px auto 360px;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    div#container{
+        width: 400px;
+        background-color: transparent;
+    }
+
+    div#blue{
+        border-radius: 25px 25px 0 0 ;
+    }
+
+    div#white{
+        border-radius:0 0 25px 25px  
+    }
+
+}
+
+@media (max-width:500px){
+
+    body{
+        height: fit-content;
+        text-align: center;
+    }
+
+    div#container{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div#blue,div#white{
+
+        width: 370px;
+    }
+}
